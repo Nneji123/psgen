@@ -47,3 +47,6 @@ optional arguments:
 
 Happy password creating! :)
 ```
+
+## License
+[MIT](https://github.com/Nneji123/psgen/dev/LICENSE)

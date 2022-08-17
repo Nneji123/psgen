@@ -21,11 +21,7 @@ repo_url: https://github.com/Nneji123/psgen
 edit_uri: ""
 
 nav:
-  - Introduction: "pylint.md"
-  - Settings: "pyproject.md"
-  - Deployment: "vscode.md"
-  - Server Behavior: "workflows.md"
-  - Contributing: "developer.md"
+  - About: "index.md"
 
 markdown_extensions:
   - admonition

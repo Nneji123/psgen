@@ -1,0 +1,36 @@
+site_name: psgen
+site_description: Random Password Generator Tool.
+
+theme:
+  name: "readthedocs"
+  palette:
+    - scheme: "default"
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: "material/lightbulb"
+        name: "Switch to dark mode"
+    - scheme: "slate"
+      media: "(prefers-color-scheme: dark)"
+      primary: "blue"
+      toggle:
+        icon: "material/lightbulb-outline"
+        name: "Switch to light mode"
+
+repo_name: nneji123/psgen
+repo_url: https://github.com/Nneji123/psgen
+edit_uri: ""
+
+nav:
+  - Introduction: "pylint.md"
+  - Settings: "pyproject.md"
+  - Deployment: "vscode.md"
+  - Server Behavior: "workflows.md"
+  - Contributing: "developer.md"
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      css_class: highlight
+  - toc:
+      permalink: true
+

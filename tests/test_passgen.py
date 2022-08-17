@@ -1,9 +1,12 @@
 import pytest
-from passgen import generate_password
+from passgen.passgen import generate_password
 
 
 def len_password_gen():
-    assert len(generate_password()) == 12
+    number = 12
+    password = generate_password(number)
+
+    assert len(password) == 12
 
 
 # def test_single_slaps():

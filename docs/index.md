@@ -1,7 +1,7 @@
 # psgen
-[![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/1.0.0/)
-[![tests](https://github.com/Nneji123/psgen/actions/workflows/test.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/test.yml)
-[![docs](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml)
+[![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/0.0.1/)
+[![Build Status](https://github.com/gabfl/password-generator-py/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/gabfl/password-generator-py/actions)
+[![codecov](https://codecov.io/gh/gabfl/password-generator-py/branch/main/graph/badge.svg)](https://codecov.io/gh/gabfl/password-generator-py)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/Nneji123/psgen/dev/LICENSE)
 
 ## Description
@@ -47,3 +47,6 @@ optional arguments:
 
 Happy password creating! :)
 ```
+
+## License
+[MIT](https://github.com/Nneji123/psgen/dev/LICENSE)

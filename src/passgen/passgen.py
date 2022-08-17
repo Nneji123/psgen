@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+# Author: Ifeanyi Nneji (Nneji123)
+# Github: https://github.com/Nneji123
+# Compatible with python 3
+
 import random
 import array
 import argparse
@@ -6,23 +12,85 @@ import argparse
 def generate_password(MAX_LEN: int) -> str:
     # maximum length of password needed
     # this can be changed to suit your password length
-    #MAX_LEN = 12
+    # MAX_LEN = 12
 
     # declare arrays of the character that we need in out password
     # Represented as chars to enable easy string concatenation
-    DIGITS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    LOCASE_CHARACTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-                         'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q',
-                         'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
-                         'z']
+    DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    LOCASE_CHARACTERS = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+    ]
 
-    UPCASE_CHARACTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-                         'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q',
-                         'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
-                         'Z']
+    UPCASE_CHARACTERS = [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+    ]
 
-    SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',
-               '*', '(', ')', '<']
+    SYMBOLS = [
+        "@",
+        "#",
+        "$",
+        "%",
+        "=",
+        ":",
+        "?",
+        ".",
+        "/",
+        "|",
+        "~",
+        ">",
+        "*",
+        "(",
+        ")",
+        "<",
+    ]
 
     # combines all the character arrays above to form one array
     COMBINED_LIST = DIGITS + UPCASE_CHARACTERS + LOCASE_CHARACTERS + SYMBOLS
@@ -48,7 +116,7 @@ def generate_password(MAX_LEN: int) -> str:
         # convert temporary password into array and shuffle to
         # prevent it from having a consistent pattern
         # where the beginning of the password is predictable
-        temp_pass_list = array.array('u', temp_pass)
+        temp_pass_list = array.array("u", temp_pass)
         random.shuffle(temp_pass_list)
 
     # traverse the temporary password array and append the chars
@@ -60,25 +128,24 @@ def generate_password(MAX_LEN: int) -> str:
 
 
 # print out password
-myparser = argparse.ArgumentParser(prog='PassGen',
-                                   description="Generate a random password with numbers, symbols and letters.",
-                                   epilog='Happy password creating! :)')
-myparser.add_argument('--number', action='store',
-                      type=int,
-                      required=True,
-                      help='Write the length of the password you want to generate. Example passgen 12')
+myparser = argparse.ArgumentParser(
+    prog="PassGen",
+    description="Generate a random password with numbers, symbols and letters.",
+    epilog="Happy password creating! :)",
+)
+myparser.add_argument(
+    "--number",
+    action="store",
+    type=int,
+    default=12,
+    help="Write the length of the password you want to generate.The default value is 12. Example passgen 12",
+)
 
 
 def main():
     args = myparser.parse_args()
     input_number = args.number
     print(generate_password(input_number))
-# app = typer.Typer()
-
-
-# @app.command()
-# def get_password(number: int):
-#     print(f"{generate_password(number)}")
 
 
 if __name__ == "__main__":

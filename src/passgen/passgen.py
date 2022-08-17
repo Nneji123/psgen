@@ -1,6 +1,6 @@
 import random
 import array
-import typer
+import argparse
 
 
 def generate_password(MAX_LEN: int) -> str:
@@ -58,17 +58,28 @@ def generate_password(MAX_LEN: int) -> str:
         password = password + x
     return str(password)
 
+
 # print out password
+myparser = argparse.ArgumentParser(prog='PassGen',
+                                   description="Generate a random password with numbers, symbols and letters.",
+                                   epilog='Happy password creating! :)')
+myparser.add_argument('--number', action='store',
+                      type=int,
+                      required=True,
+                      help='Write the length of the password you want to generate. Example passgen 12')
 
 
-app = typer.Typer()
+def main():
+    args = myparser.parse_args()
+    input_number = args.number
+    print(generate_password(input_number))
+# app = typer.Typer()
 
 
-@app.command()
-def get_password(number: int):
-    print(f"{generate_password(number)}")
-
+# @app.command()
+# def get_password(number: int):
+#     print(f"{generate_password(number)}")
 
 
 if __name__ == "__main__":
-    app()
+    main()

@@ -12,7 +12,7 @@ Random password generator tool made with python.
 <div class="termy">
 ```console   
 
-$ pip3 install psgen 
+$ pip install psgen 
 
 $ psgen
 52db9s%NhA1C
@@ -35,7 +35,7 @@ $ pip install -e .
 
 <div class="python">
 ```Python
->>> from src.psgen import generate_password
+>>> from psgen.psgen import generate_password_all
 
 >>> generate_password(12) # this will print out a 12 character password
 '52db9s%NhA1C'

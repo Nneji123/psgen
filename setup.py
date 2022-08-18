@@ -47,7 +47,7 @@ env_marker_below_38 = "python_version < '3.8'"
 setup(
     name="psgen",
     version=get_version("psgen"),
-    url="https://github.com/Nneji123/psgen",
+    url="https://nneji123.github.io/psgen/",
     license="MIT",
     description="Random Password Generator",
     long_description=get_long_description(),
@@ -78,6 +78,6 @@ setup(
     """,
     project_urls={
         "Funding": "https://github.com/sponsors/Nneji123",
-        "Source": "https://nneji123.github.io/psgen/",
+        "Source": "https://github.com/Nneji123/psgen",
     },
 )

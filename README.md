@@ -1,5 +1,5 @@
 # psgen
-[![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/1.0.0/)
+[![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/)
 [![tests](https://github.com/Nneji123/psgen/actions/workflows/test.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/test.yml)
 [![docs](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/Nneji123/psgen/dev/LICENSE)
@@ -9,7 +9,7 @@
 Random password generator made with python.
 
 ## Installation & usage
-<div class="termy">
+
 ```console   
 
 $ pip3 install psgen 
@@ -17,18 +17,18 @@ $ pip3 install psgen
 $ psgen
 52db9s%NhA1C
 ```
-</div>
+
 
 
 ## Install from source
 
-<div class="termy">
+
 ```console
 $ git clone https://github.com/Nneji123/psgen.git
 $ cd psgen
 $ pip install -e .
 ```
-</div>
+
 
 
 ## Use within another Python script
@@ -40,12 +40,12 @@ $ pip install -e .
 >>> generate_password(12) # this will print out a 12 character password
 '52db9s%NhA1C'
 ```
-</div>
+
 
 
 ## Advanced options
 
-<div class="termy">
+
 ```console
 $ python psgen.py --help
 usage: psgen [-h] [--number NUMBER] [--nodigit NODIGIT] [--noupcase NOUPCASE] [--nolowercase NOLOWERCASE] [--nosymbols NOSYMBOLS]
@@ -73,7 +73,7 @@ optional arguments:
 
 Happy password creating! :)
 ```
-</div>
+
 
 
 ## License

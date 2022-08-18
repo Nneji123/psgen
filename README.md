@@ -6,13 +6,13 @@
 
 ## Description
 
-Random password generator made with python.
+Random password generator tool made with python.
 
 ## Installation & usage
 
 ```console   
 
-$ pip3 install psgen 
+$ pip install psgen 
 
 $ psgen
 52db9s%NhA1C
@@ -33,13 +33,15 @@ $ pip install -e .
 
 ## Use within another Python script
 
-<div class="python">
+
 ```Python
->>> from src.psgen import generate_password
+>>> from psgen.psgen import generate_password_all
 
 >>> generate_password(12) # this will print out a 12 character password
 '52db9s%NhA1C'
 ```
+
+**For more information visit the official [documentation.](https://nneji123.github.io/psgen/)**
 
 
 
@@ -47,7 +49,7 @@ $ pip install -e .
 
 
 ```console
-$ python psgen.py --help
+$ psgen --help
 usage: psgen [-h] [--number NUMBER] [--nodigit NODIGIT] [--noupcase NOUPCASE] [--nolowercase NOLOWERCASE] [--nosymbols NOSYMBOLS]
              [--onlydigits ONLYDIGITS] [--onlylocase ONLYLOCASE] [--onlyupcase ONLYUPCASE] [--onlysymbols ONLYSYMBOLS]
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-Random password generator made with python.
+Random password generator tool made with python.
 
 ## Installation & usage
 <div class="termy">
@@ -47,7 +47,7 @@ $ pip install -e .
 
 <div class="termy">
 ```console
-$ python psgen.py --help
+$ psgen --help
 usage: psgen [-h] [--number NUMBER] [--nodigit NODIGIT] [--noupcase NOUPCASE] [--nolowercase NOLOWERCASE] [--nosymbols NOSYMBOLS]
              [--onlydigits ONLYDIGITS] [--onlylocase ONLYLOCASE] [--onlyupcase ONLYUPCASE] [--onlysymbols ONLYSYMBOLS]
 

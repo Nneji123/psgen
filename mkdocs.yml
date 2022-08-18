@@ -1,32 +1,62 @@
 site_name: psgen
-site_description: Random Password Generator Tool.
+site_description: psgen, a tool for generating random and secure passwords
+site_url: https://nneji123.github.io/psgen/
 
 theme:
-  name: "readthedocs"
+  name: material
   palette:
-    - scheme: "default"
-      media: "(prefers-color-scheme: light)"
-      toggle:
-        icon: "material/lightbulb"
-        name: "Switch to dark mode"
-    - scheme: "slate"
-      media: "(prefers-color-scheme: dark)"
-      primary: "blue"
-      toggle:
-        icon: "material/lightbulb-outline"
-        name: "Switch to light mode"
+    primary: black
+    accent: teal
+  icon:
+    repo: fontawesome/brands/github-alt
+  favicon: img/favicon.png
 
 repo_name: nneji123/psgen
 repo_url: https://github.com/Nneji123/psgen
 edit_uri: ""
 
 nav:
-  - About: "index.md"
+  - About: index.md
 
 markdown_extensions:
-  - admonition
-  - codehilite:
-      css_class: highlight
   - toc:
       permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format ''
+  - pymdownx.tabbed:
+      alternate_style: true
+  - mdx_include:
+      base_path: docs
 
+extra:
+  analytics:
+    provider: google
+    property: UA-133183413-1
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/nneji123/psgen
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/neji_14
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ifeanyi-nneji
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@ifeanyinneji777
+    - icon: fontawesome/solid/globe
+      link: https://ifeanyinneji.tech
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+  - js/termynal.js
+  - js/custom.js

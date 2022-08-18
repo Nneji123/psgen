@@ -1,4 +1,4 @@
-# psgen-
+# psgen
 [![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/1.0.0/)
 [![tests](https://github.com/Nneji123/psgen/actions/workflows/test.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/test.yml)
 [![docs](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml)

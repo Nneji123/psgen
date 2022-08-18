@@ -103,3 +103,4 @@ function loadVisibleTermynals() {
 window.addEventListener("scroll", loadVisibleTermynals);
 createTermynals();
 loadVisibleTermynals();
+

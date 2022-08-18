@@ -46,7 +46,7 @@ env_marker_below_38 = "python_version < '3.8'"
 
 setup(
     name="psgen",
-    version=get_version("src"),
+    version=get_version("psgen"),
     url="https://github.com/Nneji123/psgen",
     license="MIT",
     description="Random Password Generator",
@@ -54,7 +54,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Ifeanyi Nneji",
     author_email="ifeanyinneji@gmail.com",
-    packages=get_packages("src"),
+    packages=get_packages("psgen"),
     python_requires=">=3.7",
     include_package_data=True,
     classifiers=[
@@ -74,10 +74,10 @@ setup(
     ],
     entry_points="""
     [console_scripts]
-    psgen=src.psgen:main
+    psgen=psgen.psgen:main
     """,
     project_urls={
         "Funding": "https://github.com/sponsors/Nneji123",
-        "Source": "https://github.com/Nneji123/psgen",
+        "Source": "https://nneji123.github.io/psgen/",
     },
 )

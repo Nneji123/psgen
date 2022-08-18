@@ -17,6 +17,10 @@ edit_uri: ""
 
 nav:
   - About: index.md
+  - Usage: usage.md
+  - Functions: functions.md
+  - Contributing: CONTRIBUTING.md
+  - License: LICENSE.md
 
 markdown_extensions:
   - toc:

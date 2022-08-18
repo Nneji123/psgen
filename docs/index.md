@@ -47,14 +47,29 @@ $ pip install -e .
 
 <div class="termy">
 ```console
-$ psgen -h
-usage: psgen [-h] [--number NUMBER]
+$ python psgen.py --help
+usage: psgen [-h] [--number NUMBER] [--nodigit NODIGIT] [--noupcase NOUPCASE] [--nolowercase NOLOWERCASE] [--nosymbols NOSYMBOLS]
+             [--onlydigits ONLYDIGITS] [--onlylocase ONLYLOCASE] [--onlyupcase ONLYUPCASE] [--onlysymbols ONLYSYMBOLS]
 
 Generate a random password with numbers, symbols and letters.
 
 optional arguments:
-  -h, --help       show this help message and exit
-  --number NUMBER  Write the length of the password you want to generate.The default value is 12. Example psgen --number 12
+  -h, --help            show this help message and exit
+  --number NUMBER       Write the length of the password you want to generate.The default value is 12. Example psgen --number 12
+  --nodigit NODIGIT     This will generate a random password with no digits. Example psgen --nodigit 12
+  --noupcase NOUPCASE   This will generate a random password with no uppercase letters. Example psgen --noupcase 12
+  --nolowercase NOLOWERCASE
+                        This will generate a random password with no lowercase letters. Example psgen --nolowercase 12
+  --nosymbols NOSYMBOLS
+                        This will generate a random password with no symbols. Example psgen --nosymbols 12
+  --onlydigits ONLYDIGITS
+                        This will generate a random password with only digits. Example psgen --onlydigits 12
+  --onlylocase ONLYLOCASE
+                        This will generate a random password with only lowercase letters. Example psgen --onlylocase 12
+  --onlyupcase ONLYUPCASE
+                        This will generate a random password with only uppercase letters. Example psgen --onlyupcase 12
+  --onlysymbols ONLYSYMBOLS
+                        This will generate a random password with only symbols. Example psgen --onlysymbols 12
 
 Happy password creating! :)
 ```

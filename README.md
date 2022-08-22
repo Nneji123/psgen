@@ -1,5 +1,7 @@
 # psgen
 [![Pypi](https://img.shields.io/pypi/v/psgen.svg)](https://pypi.org/project/psgen/)
+
+[![Downloads](https://pepy.tech/badge/psgen)](https://pepy.tech/project/psgen)
 [![tests](https://github.com/Nneji123/psgen/actions/workflows/test.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/test.yml)
 [![docs](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/Nneji123/psgen/actions/workflows/publish-docs.yml)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/Nneji123/psgen/dev/LICENSE)
